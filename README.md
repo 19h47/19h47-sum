@@ -5,7 +5,7 @@
 ```javascript
 import sum from '@19h47/sum';
 
-sum(2, 1); // 1
+sum(2, 1); // 3
 ```
 
 ## Test

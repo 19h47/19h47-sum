@@ -1,9 +1,9 @@
 /**
  * Sum
  *
- * @param {total} total
- * @param {number} number
+ * @param {number} x
+ * @param {number} y
  */
-const sum = (total, number) => total + number;
+const sum = (x, y) => x + y;
 
 export default sum;

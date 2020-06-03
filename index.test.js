@@ -3,12 +3,12 @@ import sum from './index.js';
 const tests = [];
 
 for (let i = 0; i < 100; i++) {
-	const total = Math.floor(Math.random() * 100);
-	const number = Math.floor(Math.random() * 100);
+	const x = Math.floor(Math.random() * 100);
+	const y = Math.floor(Math.random() * 100);
 
-	tests.push([total, number, total + number]);
+	tests.push([x, y, x + y]);
 }
 
-test.each(tests)('%i plus %i equals %i', (total, number, expected) => {
-	expect(sum(total, number)).toBe(expected);
+test.each(tests)('%i plus %i equals %i', (x, y, expected) => {
+	expect(sum(x, y)).toBe(expected);
 });
