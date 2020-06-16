@@ -17,7 +17,7 @@
 	],
 	"author": "Jérémy Levron",
 	"license": "ISC",
-	"devDependencies": {
+	"dependencies": {
 		"@19h47/prettier-config": "^1.0.0",
 		"@babel/core": "^7.10.2",
 		"@babel/preset-env": "^7.10.2",
@@ -27,9 +27,7 @@
 		"webpack": "^4.43.0",
 		"webpack-cli": "^3.3.11",
 		"webpack-dev-server": "^3.11.0",
-		"webpack-merge": "^4.2.2"
-	},
-	"dependencies": {
+		"webpack-merge": "^4.2.2",
 		"babel-eslint": "^10.1.0",
 		"babel-loader": "^8.1.0",
 		"clean-webpack-plugin": "^3.0.0",

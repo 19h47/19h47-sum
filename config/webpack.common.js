@@ -18,13 +18,13 @@ function resolve(dir) {
 
 module.exports = {
 	entry: {
+		dist: resolve('index.js'),
 		docs: resolve('index.js'),
 	},
 	output: {
 		library: 'sum',
 		libraryTarget: 'umd',
-		filename: 'main.js',
-		path: path.resolve(__dirname, '../docs'),
+		filename: '../[name]/main.js',
 	},
 	devServer: {
 		contentBase: resolve('/'),
@@ -55,7 +55,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			filename: resolve('docs/index.html'),
 			template: resolve('index.html'),
-			inject: true,
+			inject: false,
 		}),
 		new WebpackNotifierPlugin({
 			title: 'Webpack',
